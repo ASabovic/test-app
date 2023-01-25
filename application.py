@@ -18,7 +18,6 @@ def simple_function():
 def complex_function():
     print("This is the complex function")
 
->>>>>>> bf094fc (Application python file is modified. Two new functions are added, some function names are changed.)
 sum_function()
 subtraction_function()
 multiplication_function()
