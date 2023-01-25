@@ -19,6 +19,8 @@ def complex_function():
 def supercomplex_function():
     print("This is the super complex function")
 
+def new_function():
+    print("This is the new function")
 
 sum_function()
 subtraction_function()
@@ -27,4 +29,4 @@ division_function()
 simple_function()
 complex_function()
 supercomplex_function()
-
+new_function()
