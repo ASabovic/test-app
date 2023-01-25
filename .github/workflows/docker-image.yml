@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [ "main" ]
 
+  workflow_dispatch: 
+
 jobs:
 
   build:
@@ -18,7 +20,7 @@ jobs:
       run: |
           GIT_TAG=$(git rev-parse --short=7 HEAD)
           docker login -u aduka27 -p ${{ secrets.PASS }}
-          docker build -t aduka27/model:$GIT_TAG
+          docker build -t aduka27/model:$GIT_TAG .
           docker tag aduka27/model:$GIT_TAG aduka27/model:latest
           docker push aduka27/model:$GIT_TAG
           docker push aduka27/model:latest
