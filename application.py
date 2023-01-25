@@ -16,8 +16,13 @@ def simple_function():
 def complex_function():
     print("This is the complex function")
 
+def supercomplex_function():
+    print("This is the super complex function")
+
 sum_function()
 subtraction_function()
 multiplication_function()
 division_function()
 simple_function()
+complex_function()
+supercomplex_function()
