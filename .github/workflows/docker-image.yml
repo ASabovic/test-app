@@ -24,4 +24,5 @@ jobs:
           docker tag aduka27/model:$GIT_TAG aduka27/model:latest
           docker push aduka27/model:$GIT_TAG
           docker push aduka27/model:latest
-          
+          sed -i 's/latest/$GIT_TAG/g deployment/test.yaml
+          git commit -am --allow-empty-message
