@@ -27,7 +27,7 @@ jobs:
           docker tag aduka27/model:$GIT_TAG aduka27/model:latest
           docker push aduka27/model:$GIT_TAG
           docker push aduka27/model:latest
-          sed -i 's/latest/$GIT_TAG/g' deployments/test.yaml
+          sed -i 's/latest/'$GIT_TAG'/g' deployments/test.yaml
           cat deployments/test.yaml
 
     - name: Commit & Push changes
