@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: test-app
-        image: aduka27/model:317be4f
+        image: aduka27/model:ae85a3f
         command: ["tail", "-f", "/dev/null"]
         resources:
           limits:
